@@ -24,10 +24,8 @@
                 <div class="col-md-12" id="description-container">
                     <h3>Sinopse:</h3>
                     <p class="event-description">{{ $film->description }}</p>
+                    <p class="event-description"><b>Gênero:</b> {{ $film->genre }}</p>
                 </div>
-
-
-
                 <p class="event-owner">
                     <ion-icon name="videocam-outline"></ion-icon>
                     Produtor: {{ $filmOwner['name'] }}
