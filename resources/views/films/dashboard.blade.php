@@ -7,12 +7,12 @@
     </div>
     <div class="col-md-10 offset-md-1 dashboard-films-container">
         @if (count($films) > 0)
-            <table class="table">
-                <thead>
+        <table class="table table-striped">
+                <thead class="thead-dark">
                     <tr>
-                        <th scope="col">#</th>
+                        <th scope="col">ID</th>
                         <th scope="col">Nome</th>
-                        <th scope="col">Participantes</th>
+                        <th scope="col"></th>
                         <th scope="col">Ações</th>
                     </tr>
                 </thead>
@@ -21,7 +21,7 @@
                         <tr>
                             <td scope="row">{{ $loop->index + 1 }}</td>
                             <td><a href="/films/{{ $film->id }}">{{ $film->title }}</a></td>
-                            <td>{{ count($film->users) }}</td>
+                            <td></td>
                             <td>
                                 <a href="/films/edit/{{ $film->id }}" class="btn btn-info edit-btn">
                                     <ion-icon name="create-outline"></ion-icon> Editar
